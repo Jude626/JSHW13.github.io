@@ -11,5 +11,4 @@ CREATE TABLE burgers (
 INSERT INTO burgers (burger_name, devoured) VALUES ('King Burger', TRUE);
 INSERT INTO burgers (burger_name, devoured) VALUES ('Queen Burger', FALSE);
 INSERT INTO burgers (burger_name, devoured) VALUES ('Prince Burger', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Princess Burger', FALSE);
-INSERT INTO burgers (burger_name, devoured) VALUES ('Baby Burger', TRUE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Princess Burger', TRUE);
