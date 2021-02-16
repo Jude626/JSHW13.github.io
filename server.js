@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
 const app = express();
-app.use(express.static(_dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.use(bodyParser.urlencoded({
     extended: false
@@ -16,6 +16,9 @@ app.engine('handlebars',handlebars({
 }));
 
 app.set('view engine','handlebars');
+
+const routes = require('./controllers/routes.js');
+app.use('/',routes);
 
 const port = 8080;
 app.listen(port);
