@@ -11,8 +11,15 @@
                     <div>{{this.id}}. {{this.burger_name}}</div>
                 </div>
             <div class="text-center">
-                <form
+                <form method="POST" action="/burgers/update?_method=PUT"
+                class="button">
+                    <input type="hidden" name="burger_id" type="text"
+                    value={{this.id}}>
+                    <button type="submit" class="btn-default">DEVOUR IT!!</button>
+                </form>
             </div>
+            {{/unless}}
+            {{/each}}
             </div>
         </div>
     </div>
