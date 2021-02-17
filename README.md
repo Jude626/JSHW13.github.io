@@ -30,4 +30,4 @@
 Comments or Concerns? Please contact me with the information provided below!
 - GitHub: https://github.com/Jude626
 - Email: jantungkuno@gmail.com
-- Repository: JSHW13.github.io
+- Repository: https://github.com/Jude626/JSHW13.github.io
