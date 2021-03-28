@@ -8,12 +8,12 @@ const burger = {
     },
 
     update: function(id,cb){
-        orm.update('burgers',id,cb);
+        orm.update('burgers',{devoured : 1}, `id = ${id}`, cb);
     },
 
     create: function(name,cb){
-        orm.create('burgers', name, cb);
-    }
-}
+        orm.create('burgers', 'burger_name', [name], cb);
+    },
+};
 
 module.exports = burger;
