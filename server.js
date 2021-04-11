@@ -3,6 +3,7 @@ const handlebars = require('express-handlebars');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
+
 const app = express();
 app.use(express.static(__dirname + '/public'));
 
@@ -16,6 +17,7 @@ app.engine('handlebars',handlebars({
 }));
 
 app.set('view engine','handlebars');
+app.use(express.static('views')); 
 
 const routes = require('./controllers/routes.js');
 app.use('/',routes);
